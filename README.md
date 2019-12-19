@@ -1,4 +1,5 @@
 # Jenkins-Setup
+This guide will help installing Jenkins on Docker Swarm on 2 Ubuntu 18.04 Machines.
 ## Configure Passwordless SSH
 On your local machine execute:
 ```
