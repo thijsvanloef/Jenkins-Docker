@@ -27,7 +27,7 @@ Add the following lines to the file to sync every 5 minutes:
 */5 * * * * rsync -a --delete ~/jenkins <Username>@<IP Address>:~/
 */5 * * * * rsync -a --delete <Username>@<IP Address>:~/jenkins ~/
 ```
-
+Keep in mind however that some changes can be overwritten using this configuration. See [this Issue](https://github.com/thijsvanloef/Jenkins-Setup/issues/1).
 ## Jenkins Setup
 - Install Recommended plugins
 - Create admin account
