@@ -24,8 +24,8 @@ crontab -e
 ```
 Add the following lines to the file to sync every 5 minutes:
 ```
-*/5 * * * * rsync -a ~/jenkins <Username>@<IP Address>:~/
-*/5 * * * * rsync -a <Username>@<IP Address>:~/jenkins ~/
+*/5 * * * * rsync -a --delete ~/jenkins <Username>@<IP Address>:~/
+*/5 * * * * rsync -a --delete <Username>@<IP Address>:~/jenkins ~/
 ```
 
 ## Jenkins Setup
