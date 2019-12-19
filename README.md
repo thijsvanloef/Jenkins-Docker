@@ -23,8 +23,8 @@ crontab -e
 ```
 Add the following lines to the file:
 ```
-5 * * * * rsync -a ~/jenkins thijs@10.0.1.62:~/
-5 * * * * rsync -a thijs@10.0.1.62:~/jenkins ~/
+5 * * * * rsync -a ~/jenkins <Username>@<IP Address>:~/
+5 * * * * rsync -a <Username>@<IP Address>:~/jenkins ~/
 ```
 
 ## Jenkins Setup
