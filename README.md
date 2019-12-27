@@ -85,7 +85,10 @@ Add the following lines to the file to sync every 5 minutes:
 Keep in mind however that some changes can be overwritten using this configuration. See [this Issue](https://github.com/thijsvanloef/Jenkins-Setup/issues/1).
 
 ## Jenkins Setup
-- Install Recommended plugins
+
+### Install plugins
+Plugins Are already installed when running the image from the docker-compose.yml file.
+Please select 
 - Create admin account
 - Install Docker-Swarm Add-on
 
