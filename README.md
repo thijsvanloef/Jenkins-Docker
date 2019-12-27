@@ -85,12 +85,31 @@ Add the following lines to the file to sync every 5 minutes:
 Keep in mind however that some changes can be overwritten using this configuration. See [this Issue](https://github.com/thijsvanloef/Jenkins-Setup/issues/1).
 
 ## Jenkins Setup
+### Unlock Jenkins
+The first step after navtigating to your jenkins instance, is unlocking your instance. This is done by entering the following command on your docker host:
+```
+sudo docker logs <containerid>
+```
+This command will output the logs and you will come across something like this:
+```
+Jenkins initial setup is required. An admin user has been created and a password generated.
+Please use the following password to proceed to installation:
 
+<Long Password String>
+
+This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
+```
+Copy and paste this password into the webform and click Continue.
 ### Install plugins
-Plugins Are already installed when running the image from the docker-compose.yml file.
-Please select 
-- Create admin account
-- Install Docker-Swarm Add-on
+The plugins you'll need are already on the image you've pulled from hub.docker.com, so when asked to customize Jenkins please select the option: "Select Plugins to install"
+Then at the top of the page click "none" and then Install.
+### Create First Admin User
+In this form please enter the credentials of the first admin user you will use to initially configure Jenkins.
+Then click Save and Continue.
+### Instance Configuration
+For the final step enter the Jenkins Base URL where your Jenkins Instance will be available from.
+When you've entered the Base URL hit Save and Finish.
+Now you are ready do use Jenkins.
 
 ## Docker Host Certificate Authentication
 In progress
