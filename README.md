@@ -1,7 +1,7 @@
 # Jenkins-Setup
 This guide will help installing Jenkins on Docker Swarm on 2 Ubuntu 18.04 Machines.
 ## Install Docker
-To run Jenkins on the Ubuntu Hosts, each of the hosts must have docker installed in order for Jenkins to run. This can be done by following [this guide]() or following the steps below:
+To run Jenkins on the Ubuntu Hosts, each of the hosts must have docker installed in order for Jenkins to run. This can be done by following [this guide](https://docs.docker.com/install/linux/docker-ce/ubuntu/) or following the steps below:
 ```
 sudo apt-get update
 ```
@@ -47,7 +47,7 @@ To add a worker to this swarm, run the following command:
     --token <Docker Swarm Token> \
     <IP Address>:2377
 ```
-Use this command on the second host to join it into the swarm. Now you are almost ready to deploy Jenkins! However you still have to configure some small things.
+Use this command on the second host to join it into the swarm (you might need to use sudo). Now you are almost ready to deploy Jenkins! However you still have to configure some small things.
 ## Configure Passwordless SSH
 On your local machine execute:
 ```
