@@ -32,3 +32,6 @@ ssh-credentials:latest
 subversion:latest
 timestamper:latest
 ws-cleanup:latest
+bouncycastle-api:latest
+command-launcher:latest
+jdk-tool:latest
