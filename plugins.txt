@@ -8,6 +8,7 @@ credentials:latest
 display-url-api:latest
 docker-commons:latest
 docker-java-api:latest
+docker-plugin:latest
 docker-slaves:latest
 docker-swarm:latest	
 docker-workflow:latest

@@ -112,4 +112,8 @@ When you've entered the Base URL hit Save and Finish.
 Now you are ready do use Jenkins.
 
 ## Docker Host Certificate Authentication
+### Exposing Docker Daemon
+### Adding New Cloud
+### Creating Certificates
+
 In progress
