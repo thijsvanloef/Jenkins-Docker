@@ -9,14 +9,21 @@ Copy the public key to the Server you want to authenticate to:
 ```
 ssh-copy-id <username>@<Server IP address>
 ```
-
+## Clone the GitHub Repository
+```
+git clone git@github.com:thijsvanloef/Jenkins-Docker.git
+```
+or
+```
+git clone https://github.com/thijsvanloef/Jenkins-Docker.git
+```
 ## Deploy the Stack
-Download the Docker-Compose.yml file
+Find the docker-compose.yml file inside the cloned github repository and run the following:
 
 ```
 sudo docker stack deploy --compose-file=docker-compose.yml jenkins
 ```
-
+This will start the building of the image, and automatically exposes your Jenkins instance on [localhost:8080](http://localhost:8080)
 ## Enable Sync between hosts
 Open up the crontab config:
 ```
