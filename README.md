@@ -86,9 +86,7 @@ For the final step enter the Jenkins Base URL where your Jenkins Instance will b
 When you've entered the Base URL hit Save and Finish.
 Now you are ready do use Jenkins.
 
-## Docker Host Certificate Authentication
+## Connecting Jenkins To Docker Daemon
 ### Exposing Docker Daemon
-### Adding New Cloud
-### Creating Certificates
 
-In progress
+### Adding New Cloud
