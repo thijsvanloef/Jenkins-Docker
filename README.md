@@ -106,4 +106,15 @@ Restart the docker daemon with new startup options:
 ```
 sudo systemctl restart docker.service
 ```
-### Adding New Cloud
+### Adding Docker Commands to your Pipeline 
+To let Jenkins make Docker Containers for the build add the following script to the Pipeline:
+```
+node {
+    docker.withServer('tcp://172.17.0.1:2375') {
+        docker.image('ubuntu:latest').inside {
+            /* your command here */
+
+        }
+    }
+}
+```
