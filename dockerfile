@@ -1,5 +1,5 @@
 # Pull the image
-FROM jenkins/jenkins:2.210
+FROM jenkins/jenkins:lts
 # Become root to pull plugins.txt from github repo
 USER root
 RUN wget 'https://raw.githubusercontent.com/thijsvanloef/Jenkins-Setup/master/plugins.txt' -O /usr/share/jenkins/ref/plugins.txt
