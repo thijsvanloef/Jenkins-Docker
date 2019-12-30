@@ -36,3 +36,4 @@ ssh-credentials:latest
 subversion:latest
 timestamper:latest
 ws-cleanup:latest
+xunit:latest

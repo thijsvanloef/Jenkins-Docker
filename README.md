@@ -88,5 +88,4 @@ Now you are ready do use Jenkins.
 
 ## Connecting Jenkins To Docker Daemon
 ### Exposing Docker Daemon
-
 ### Adding New Cloud
