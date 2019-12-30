@@ -91,4 +91,19 @@ Now you are ready do use Jenkins.
 
 ## Connecting Jenkins To Docker Daemon
 ### Exposing Docker Daemon
+On your docker swarm manager add the following to /etc/default/docker
+```
+DOCKER_OPTS="-H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock
+```
+And add the following to /etc/systemd/system/docker.service.d/options.conf
+```
+[Service]
+ExecStart=
+ExecStart=/usr/bin/dockerd -H unix:// -H tcp://0.0.0.0:2375
+```
+And reload the config:
+```
+sudo systemctl daemon-reload
+sudo systemctl restart docker.service
+```
 ### Adding New Cloud
