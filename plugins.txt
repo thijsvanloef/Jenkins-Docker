@@ -9,7 +9,6 @@ display-url-api:latest
 docker-commons:latest
 docker-java-api:latest
 docker-slaves:latest
-docker-swarm:latest	
 docker-workflow:latest
 git-client:latest	
 git-server:latest	
