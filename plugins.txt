@@ -31,6 +31,7 @@ pipeline-rest-api:latest
 pipeline-stage-step:latest
 pipeline-stage-tags-metadata:latest
 pipeline-stage-view:latest
+simple-theme-plugin:latest
 ssh-credentials:latest
 subversion:latest
 timestamper:latest
